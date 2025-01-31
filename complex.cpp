@@ -45,6 +45,14 @@ complex complex::multiply (complex x)
  
     return c;
 }
+complex complex::conjugate ()
+{
+    complex c;
+    c.real = this->real;
+    c.img=-this->img;
+ 
+    return c;
+}
 
 
  

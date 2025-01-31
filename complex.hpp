@@ -12,6 +12,7 @@ public :
    complex add(complex x);
    complex subtract(complex x);
    complex multiply(complex x);
+   complex conjugate();
  
   
 };

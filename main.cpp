@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    complex a,b,ans,sub,mul;
+    complex a,b,ans,sub,mul,con;
 
     a.real=1.00;
     a.img=1.00;
@@ -24,11 +24,17 @@ int main()
     cout<<"Subtraction of two numbers is"<<endl;
     sub.display();
 
-    mul=a.mul(b);
+    mul=a.multiply(b);
     cout<<"Multliplication of two numbers is "<<endl;
 mul.display();
 
+con=a.conjugate();
+cout<<"Conjugate of a  is"<<endl;
+con.display();
 
+con=b.conjugate();
+cout<<"Conjugate of b  is"<<endl;
+con.display();
 
 
 }
