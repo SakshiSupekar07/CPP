@@ -1,6 +1,6 @@
 #include "complex.hpp"
+#include<cmath>
 using namespace std;
-
  
 complex::complex()
 {
@@ -51,6 +51,25 @@ complex complex::conjugate ()
     c.real = this->real;
     c.img=-this->img;
  
+    return c;
+}
+double  complex::norm() 
+{
+    return sqrt (real*real+img*img);
+    
+}
+complex complex::divide(complex x) {
+    complex c;
+    double denominator = x.real * x.real + x.img * x.img; 
+     if (denominator == 0) {
+        cout << "Error: Division by zero!" << endl;
+        return c; 
+    }
+
+   
+    c.real = (this->real * x.real + this->img * x.img) / denominator;
+    c.img = (this->img * x.real - this->real * x.img) / denominator;
+    
     return c;
 }
 

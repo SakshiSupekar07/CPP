@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    complex a,b,ans,sub,mul,con;
+    complex a,b,ans,sub,mul,con,div;
 
     a.real=1.00;
     a.img=1.00;
@@ -36,6 +36,13 @@ con=b.conjugate();
 cout<<"Conjugate of b  is"<<endl;
 con.display();
 
+cout <<"Norm of first number is " <<a.norm() <<endl;
+cout <<"Norm of second number is " <<b.norm() <<endl;
+
+div=a.divide(b);
+cout<<"Division of first by second number is"<<endl;
+div.display();
+return 0;
 
 }
 
