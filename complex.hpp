@@ -14,5 +14,5 @@ public:
    complex multiply(complex x);
    complex conjugate();
    double norm();
-   complex divide(complex x);
+   complex divide(complex x)
 };
