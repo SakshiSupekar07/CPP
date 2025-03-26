@@ -9,7 +9,7 @@ int main()
     cout<<ch<<"is an alphabet";
 }
 else if((ch>='0'&&ch<='9')){
-    cout <<ch<<"is an digit";
+    cout <<ch<<"is an digit"
 }
 else
 cout<<ch<<"is an special character"<<endl;
